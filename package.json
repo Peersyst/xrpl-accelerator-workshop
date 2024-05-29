@@ -1,0 +1,26 @@
+{
+  "name": "xrpl-accelerator-ws",
+  "version": "1.0.0",
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "deploy-token": "hardhat run --network evmSidechain scripts/deploy-token.ts",
+    "buy": "hardhat run --network evmSidechain scripts/buy.ts",
+    "flatten": "hardhat flatten > Flatten.sol",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "hardhat": "^2.22.2"
+  }
+}
